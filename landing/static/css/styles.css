@@ -377,6 +377,11 @@ body {
     .custom-toggle {
         display: block;
     }
+
+    .auction-links {
+        flex-direction: column;
+        gap: 0.4rem;
+  }
 }
 
 /* Custom auction house links */
