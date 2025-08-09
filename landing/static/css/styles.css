@@ -408,10 +408,6 @@ body {
 }
 
 /* Images */
-.grading-logo {
-    margin-top: 7px;
-}
-
 #cert-lookup fieldset {
     display: flex;
     align-items: center; /* vertical alignment */
@@ -419,5 +415,15 @@ body {
 }
 
 #cert-lookup .grading-logo {
+    height: 30px; /* adjust as needed */
+}
+
+#ebay-lookup fieldset {
+    display: flex;
+    align-items: center; /* vertical alignment */
+    gap: 0.5em; /* space between elements */
+}
+
+#ebay-lookup .ebay-logo {
     height: 30px; /* adjust as needed */
 }
