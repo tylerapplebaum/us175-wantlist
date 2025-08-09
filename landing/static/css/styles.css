@@ -187,13 +187,13 @@ body {
 
 @media screen and (min-width: 48em) {
     .l-boxes-item {
-        border-bottom: none;
+        border-bottom: 0.5em solid #ffffff;
     }
-    .l-boxes-item:nth-child(1) {
-        border-right: 0.5em solid #ffffff;
+    .l-boxes-item:nth-child(odd) {
+        border-right: 0.25em solid #ffffff;
     }
-    .l-boxes-item:nth-child(2) {
-        border-left: 0.5em solid #ffffff;
+    .l-boxes-item:nth-child(even) {
+        border-left: 0.25em solid #ffffff;
     }
 }
 
