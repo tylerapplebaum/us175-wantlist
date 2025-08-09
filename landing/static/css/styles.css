@@ -408,10 +408,16 @@ body {
 }
 
 /* Images */
-.grading-logo-dim {
-    filter: brightness(30%);
+.grading-logo {
+    margin-top: 7px;
 }
 
-.grading-logo-bright {
-    filter: brightness(100%);
+#cert-lookup fieldset {
+    display: flex;
+    align-items: center; /* vertical alignment */
+    gap: 0.5em; /* space between elements */
+}
+
+#cert-lookup .grading-logo {
+    height: 30px; /* adjust as needed */
 }
