@@ -1,3 +1,8 @@
+@font-face {
+    font-family: CervoNeue-Regular;
+    src: url(/wantlist/static/fonts/CervoNeue/cervoneue-regularneue-webfont.woff);
+}
+
 html,
 button,
 input,
