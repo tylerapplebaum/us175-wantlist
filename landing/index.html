@@ -142,8 +142,8 @@
                                     <legend>Graded cert lookup</legend>
                                     <input id="cert-input" class="pure-input-1-3" type="text" placeholder="Enter cert #" required>
                                     <button type="submit" class="pure-button pure-button-primary">Search</button>
-                                    <img src="/static/img/bgs-logo-thumb.png" class="grading-logo" id="bgs-grading-logo" alt="BGS logo thumbnail">
-                                    <img src="/static/img/psa-logo-thumb.png" class="grading-logo" id="psa-grading-logo" alt="PSA logo thumbnail">
+                                    <img src="/landing/static/img/bgs-logo-thumb.png" class="grading-logo" id="bgs-grading-logo" alt="BGS logo thumbnail">
+                                    <img src="/landing/static/img/psa-logo-thumb.png" class="grading-logo" id="psa-grading-logo" alt="PSA logo thumbnail">
                                 </fieldset>
                             </form>
                             <script>
@@ -156,9 +156,11 @@
                                     if (bgsRegex.test(input)) {
                                         targetUrl = `https://www.beckett.com/grading/card-lookup?item_id=${encodeURIComponent(input)}&item_type=BGS`;
                                         console.log("BGS cert number detected");
+                                        document.getElementById("bgs-grading-logo").classList.add('grading-logo-bright');
                                     } else if (psaRegex.test(input)) {
                                         targetUrl = `https://www.psacard.com/cert/${encodeURIComponent(input)}/psa`;
                                         console.log("PSA cert number detected");
+                                        document.getElementById("psa-grading-logo").classList.add('grading-logo-bright');
                                     } else {
                                         alert('Invalid cert number format.');
                                         return;

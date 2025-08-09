@@ -408,6 +408,10 @@ body {
 }
 
 /* Images */
-.grading-logo {
+.grading-logo-dim {
     filter: brightness(30%);
+}
+
+.grading-logo-bright {
+    filter: brightness(100%);
 }
