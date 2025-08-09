@@ -398,7 +398,6 @@ body {
   margin: 0;
 }
 
-/* Optional: make links stand out a bit */
 .auction-links a {
   text-decoration: none;
   color: #0066cc;
@@ -406,4 +405,9 @@ body {
 
 .auction-links a:hover {
   text-decoration: underline;
+}
+
+/* Images */
+.grading-logo {
+    filter: brightness(30%);
 }

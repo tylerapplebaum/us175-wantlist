@@ -142,19 +142,17 @@
                                     <legend>Graded cert lookup</legend>
                                     <input id="cert-input" class="pure-input-1-3" type="text" placeholder="Enter cert #" required>
                                     <button type="submit" class="pure-button pure-button-primary">Search</button>
+                                    <img src="/static/img/bgs-logo-thumb.png" class="grading-logo" id="bgs-grading-logo" alt="BGS logo thumbnail">
+                                    <img src="/static/img/psa-logo-thumb.png" class="grading-logo" id="psa-grading-logo" alt="PSA logo thumbnail">
                                 </fieldset>
                             </form>
                             <script>
                                 document.getElementById('cert-lookup').addEventListener('submit', function(e) {
                                     e.preventDefault(); // stop default form submission
-
                                     const input = document.getElementById('cert-input').value.trim();
-                                    
                                     const bgsRegex = /^00\d{8,9}$/;
                                     const psaRegex = /^(?:(?!00))\d{8,9}$/;
-
                                     let targetUrl = '';
-
                                     if (bgsRegex.test(input)) {
                                         targetUrl = `https://www.beckett.com/grading/card-lookup?item_id=${encodeURIComponent(input)}&item_type=BGS`;
                                         console.log("BGS cert number detected");
