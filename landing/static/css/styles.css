@@ -2,14 +2,13 @@
     font-family: CervoNeue-Regular;
     src: url(/wantlist/static/fonts/CervoNeue/cervoneue-regularneue-webfont.woff);
 }
-
 html,
 button,
 input,
 select,
 textarea,
 .pure-g [class *="pure-u"] {
-    font-family: 'Open Sans', sans-serif;
+    font-family: CervoNeue-Regular;
 }
 
 body {
@@ -268,6 +267,14 @@ body {
 
 .footer-link:hover {
     color: #cccccc;
+}
+
+.eml-protected {
+    color: #ffffff;
+}
+
+.eml-protected:hover {
+    color: #cccccc
 }
 
 .footer-list {
