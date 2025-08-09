@@ -153,12 +153,14 @@
                                     let targetUrl = '';
                                     if (bgsRegex.test(input)) {
                                         targetUrl = `https://www.beckett.com/grading/card-lookup?item_id=${encodeURIComponent(input)}&item_type=BGS`;
-                                        console.log("BGS cert number detected");
+                                        // console.log("BGS cert number detected");
                                         document.getElementById("bgs-grading-logo").hidden = false;
+                                        document.getElementById("psa-grading-logo").hidden = true;
                                     } else if (psaRegex.test(input)) {
                                         targetUrl = `https://www.psacard.com/cert/${encodeURIComponent(input)}/psa`;
-                                        console.log("PSA cert number detected");
+                                        // console.log("PSA cert number detected");
                                         document.getElementById("psa-grading-logo").hidden = false;
+                                        document.getElementById("bgs-grading-logo").hidden = true;
                                     } else {
                                         alert('Invalid cert number format.');
                                         return;
