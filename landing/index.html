@@ -171,6 +171,30 @@
                             </script>
                         </div>
                     </div>
+                    <div class="pure-g">
+                        <div class="pure-u-1">
+                            <h3>Price Research</h3>
+                            <form class="pure-form" id="ebay-lookup">
+                                <fieldset>
+                                    <legend>eBay Terapeak Lookup</legend>
+                                    <input id="ebay-input" class="pure-input-1-2" type="text" placeholder="Enter eBay search term" required>
+                                    <button type="submit" class="pure-button pure-button-primary">Search</button>
+                                    <img src="/landing/static/img/ebay-logo-thumb.png" class="grading-logo" id="ebay-logo" alt="eBay logo thumbnail" hidden>
+                                </fieldset>
+                            </form>
+                                <script>
+                                document.getElementById('ebay-lookup').addEventListener('submit', function(e) {
+                                    e.preventDefault(); // stop default form submission
+                                    const input = document.getElementById('ebay-input').value.trim().replaceAll('','+');
+                                    const curDate = Date.now();
+                                    const oneYearAgo = curDate - 31556952000;
+                                    targetUrl = `https://www.ebay.com/sh/research?marketplace=EBAY-US&keywords=${encodeURIComponent(input)}&dayRange=365&endDate=${curDate}&startDate=${oneYearAgo}&categoryId=261328&offset=0&limit=50&sorting=-datelastsold&tabName=SOLD&tz=America%2FNew_York`;
+                                    // open in a new tab
+                                    window.open(targetUrl, '_blank', 'noopener');
+                                });
+                                </script>
+                        </div>
+                    </div>
                 </div>
             </div>
     <div class="footer">
