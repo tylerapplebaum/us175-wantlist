@@ -182,17 +182,51 @@
                                     <img src="/landing/static/img/ebay-logo-thumb.png" class="grading-logo" id="ebay-logo" alt="eBay logo thumbnail">
                                 </fieldset>
                             </form>
-                                <script>
-                                document.getElementById('ebay-lookup').addEventListener('submit', function(e) {
-                                    e.preventDefault(); // stop default form submission
-                                    const input = document.getElementById('ebay-input').value.trim().replaceAll(' ','+');
-                                    const curDate = Date.now();
-                                    const oneYearAgo = curDate - 31556952000;
-                                    targetUrl = `https://www.ebay.com/sh/research?marketplace=EBAY-US&keywords=${encodeURIComponent(input)}&dayRange=365&endDate=${curDate}&startDate=${oneYearAgo}&categoryId=261328&offset=0&limit=50&sorting=-datelastsold&tabName=SOLD&tz=America%2FNew_York`;
-                                    // open in a new tab
-                                    window.open(targetUrl, '_blank', 'noopener');
-                                });
-                                </script>
+                            <ul class="auction-links">
+                                <li><a href="https://www.psacard.com/pop/baseball-cards/20003" target="_blank" rel="noopener noreferrer">PSA Pop Report</a></li>
+                                <li><a href="https://www.beckett.com/grading/pop-report" target="_blank" rel="noopener noreferrer">BGS Pop Report</a></li>
+                            </ul>
+                            <script>
+                            document.getElementById('ebay-lookup').addEventListener('submit', function(e) {
+                                e.preventDefault(); // stop default form submission
+                                const input = document.getElementById('ebay-input').value.trim().replaceAll(' ','+');
+                                const curDate = Date.now();
+                                const oneYearAgo = curDate - 31556952000;
+                                targetUrl = `https://www.ebay.com/sh/research?marketplace=EBAY-US&keywords=${encodeURIComponent(input)}&dayRange=365&endDate=${curDate}&startDate=${oneYearAgo}&categoryId=261328&offset=0&limit=50&sorting=-datelastsold&tabName=SOLD&tz=America%2FNew_York`;
+                                // open in a new tab
+                                window.open(targetUrl, '_blank', 'noopener');
+                            });
+                            </script>
+                        </div>
+                    </div>
+                    <div class="pure-g">
+                        <div class="pure-u-1">
+                            <h3>Other Links</h3>
+                        </div>
+			        </div>
+                    <div class="pure-g l-boxes">
+                    <!-- <p><a href="" target="_blank" rel="noopener noreferrer">X</a></p> -->
+                        <div class="pure-u-1 pure-u-md-1-2 l-boxes-item">
+                            <h4>Card Buying</h4>
+                            <p><a href="https://www.comc.com/Manage/" target="_blank" rel="noopener noreferrer">COMC</a></p>
+                            <p><a href="https://www.sportscollectorsdaily.com/most-watched-baseball-cards-on-ebay/" target="_blank" rel="noopener noreferrer">SCD Most Watched</a></p>
+                            <p><a href="https://cardbarrel.com/?subcats=Y&pcode_from_q=Y&pshort=Y&pfull=Y&pname=Y&pkeywords=Y&search_performed=Y&q=topps+heritage+black+ref&dispatch=products.search&security_hash=8dd514249d3f04c4b77d74768444907a" target="_blank" rel="noopener noreferrer">Cardbarrel</a></p>
+                            <p><a href="https://sportlots.com/" target="_blank" rel="noopener noreferrer">Sportlots</a></p>
+                            <p><a href="https://automatedsearches.com/my-ebay-searches" target="_blank" rel="noopener noreferrer">Automated Searches</a></p>
+                            <p><a href="https://www.buysportscards.com/" target="_blank" rel="noopener noreferrer">BSC</a></p>
+                            <p><a href="https://marketplace.beckett.com/" target="_blank" rel="noopener noreferrer">Beckett Marketplace</a></p>
+                        </div>
+                        <div class="pure-u-1 pure-u-md-1-2 l-boxes-item">
+                            <h4>Baseball Stats</h4>
+                            <p><a href="https://www.baseball-reference.com/" target="_blank" rel="noopener noreferrer">Baseball Reference</a></p>
+                            <p><a href="https://www.fangraphs.com/prospects/the-board" target="_blank" rel="noopener noreferrer">Fangraphs Prospects</a></p>
+                            <p><a href="https://baseballsavant.mlb.com/leaderboard/home-runs" target="_blank" rel="noopener noreferrer">Statcast</a></p>
+                        </div>
+                        <div class="pure-u-1 pure-u-md-1-2 l-boxes-item">
+                            <h4>Card Research &amp; Utilities</h4>
+                            <p><a href="https://baseballcardpedia.com/index.php/Main_Page" target="_blank" rel="noopener noreferrer">Baseballcardpedia</a></p>
+                            <p><a href="https://www.insidepitchpromo.com/" target="_blank" rel="noopener noreferrer">Local shows</a></p>
+                            <p><a href="https://ship.pirateship.com/ship" target="_blank" rel="noopener noreferrer">PirateShip</a></p>
                         </div>
                     </div>
                 </div>
