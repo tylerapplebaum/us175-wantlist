@@ -177,12 +177,14 @@ body {
 }
 
 .l-boxes-item a {
-    color: inherit;
+    color: #134f19;
     font-size: 0.9em;
+    text-decoration: none;
 }
 
 .l-boxes-item a:hover {
     color: #111427;
+    text-decoration: underline;
 }
 
 @media screen and (min-width: 48em) {
@@ -404,6 +406,20 @@ body {
 }
 
 .auction-links a:hover {
+  text-decoration: underline;
+}
+
+/* eBay links */
+.eBay-links li {
+  margin: 0;
+}
+
+.eBay-links a {
+  text-decoration: none;
+  color: #0066cc;
+}
+
+.eBay-links a:hover {
   text-decoration: underline;
 }
 
