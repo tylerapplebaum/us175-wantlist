@@ -143,6 +143,8 @@ body {
 .pure-menu-link:hover {
     background: #fff;
     color: #333;
+    text-decoration: underline;
+    text-decoration-color: #ffd700;
 }
 
 /* Boxes */
