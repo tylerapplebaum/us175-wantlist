@@ -378,6 +378,10 @@ body {
 }
 
 @media (max-width: 47.999em) {
+    .custom-wrapper.is-open .pure-menu-list {
+        display: block; /* This makes the list visible on mobile when opened */
+    }
+
     .custom-toggle {
         display: block;
     }
