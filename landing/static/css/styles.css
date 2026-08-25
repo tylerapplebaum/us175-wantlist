@@ -378,18 +378,45 @@ body {
 }
 
 @media (max-width: 47.999em) {
-    .custom-wrapper.is-open .pure-menu-list {
-        display: block; /* This makes the list visible on mobile when opened */
-    }
-
+    /* 1. Show the hamburger menu toggle */
     .custom-toggle {
         display: block;
     }
 
+    /* 2. Make the menu list vertical and show it when the wrapper is open */
+    .custom-wrapper.is-open .pure-menu-list {
+        display: block; /* Allows stacking */
+        width: 100%;
+    }
+
+    /* 3. Override the default inline-block behavior for mobile */
+    .custom-wrapper .pure-menu-list {
+        display: none; /* Hidden by default on mobile */
+    }
+    
+    .custom-wrapper .pure-menu-item {
+        display: block; /* Stack items vertically */
+        width: 100%;    /* Full width for touch targets */
+        height: auto;   /* Remove the fixed height constraint */
+    }
+
+    /* 4. Give the menu items proper vertical padding */
+    .custom-wrapper .pure-menu-link {
+        display: block;
+        padding: 0.75em 1em; /* This adds the missing padding */
+        width: 100%;
+    }
+    
+    .custom-wrapper .pure-menu-heading {
+        display: block; /* Ensure the title is on its own line */
+        width: 100%;
+    }
+
+    /* 5. Auction links layout fix */
     .auction-links {
         flex-direction: column;
         gap: 0.4rem;
-  }
+    }
 }
 
 /* Custom auction house links */
