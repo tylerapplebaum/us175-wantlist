@@ -326,7 +326,7 @@ body {
 
 .custom-wrapper.is-open {
     /* Six menu rows need more room than the original 12.5em. */
-    height: 14em;
+    height: 15.5em;
 }
 
 .custom-wrapper.is-open .pure-menu-item {
